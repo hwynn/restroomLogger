@@ -1,0 +1,66 @@
+html{
+  height:100%
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  background-color: rgb(245, 222, 179);
+}
+
+.parent { overflow: hidden; }
+
+.center{
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  overflow: hidden;
+}
+
+.formfield{
+  background-color: transparent;
+  margin-top: 5px;
+  width: 60%;
+  padding: 5px;
+  text-align: center;
+}
+
+.blank{
+display:none;
+}
+
+.icon{
+	width: 31px; 
+	height: 31px;
+}
+
+#genderform{
+	width: 30%;
+	font-size: 1.2em;
+	border-style: dotted;
+}
+#handicapform{
+	width: 30%;
+	font-size: 1.2em;
+	border-style: dotted;
+}
+
+#header{
+font-size: 2em;
+margin-top: 2px;
+margin-bottom: 2px;
+color: rgb(45,67,58);
+font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+}
+
+#whereinfo{
+text-align: center;
+}
+
+#middlePane{
+	height: 100%;
+	width: 60%;
+	background-color: rgb(217, 209, 186);
+	border: 1px solid rgb(213, 207, 189);
+	box-shadow: 4px 4px grey;
+}

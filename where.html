@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+		<link rel="stylesheet" type="text/css" href="wherestyle.css">
+		<script src="wherescript.js"></script>
+	</head>
+	<body onload="clearInput()">
+		<div id="middlePane" class="center">
+		<!--http://encycolorpedia.com/d9d1ba-->
+			<div class="formfield center">
+			<!--http://cssfontstack.com/oldsites/cssfontstack/-->
+				<p id="header">Log this Bathroom</p>
+			</div>
+			<div id="genderform" class="formfield center">
+				<input type="radio" class="blank" id="nogender" name="gender" value="none" checked>
+				<label><input type="radio" name="gender" value="male"> Male <img class="icon" src="mens.png"></label> <br>
+				<label><input type="radio" name="gender" value="female"> Female <img class="icon" src="womens.png"></label> <br>
+				<label><input type="radio" name="gender" value="unisex"> Unisex <img class="icon" src="unisex.png"></label> <br>
+			</div>
+			<div id="handicapform" id="handicap" class="formfield center">
+				<input type="radio" class="blank" id="nohandicap" name="handicap" value="none" checked>
+				<label><input type="radio" name="handicap" value="yes"> Handicap Accessible <img class="icon" src="wheelchair.png"></label> <br>
+				<label><input type="radio" name="handicap" value="no"> Not Handicap Accessible</label> <br>
+			</div>
+			<div id="floornum" class="formfield center">
+				<p>Look at the room numbers around you. What number do they all begin with? <br>
+				(0 if floor above has an extra digit and begins with 1)</p>
+				<select id="floor" name="floor" onchange="check()">
+					<option value="none" id="nofloor" selected> - </option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+				</select>
+			</div>
+			<div class="formfield center">
+				<button id="findme" onmouseup="tellMe()">Record!</button>
+			</div>
+			
+
+			<p id="whereinfo"></p>
+		</div>
+	</body>
+</html>
