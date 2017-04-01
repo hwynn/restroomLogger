@@ -6,24 +6,26 @@ function clearInput(){
 }
 
 function check(){
-	var gender = document.querySelector('input[name="gender"]:checked');
-	var handicap = document.querySelector('input[name="gender"]:checked');
+	var gender = document.querySelector('input[name="gender"]:checked').value;
+	var handicap = document.querySelector('input[name="handicap"]:checked').value;
 	var floor = document.getElementById("floor").value;
-	if((gender=="none")||(handicap=="none")||(floor=="none")){
-		document.getElementById("findme").disabled = true;
-	}
-	else{
-		document.getElementById("findme").disabled = false;
-	}
+	if((gender=="none")||(handicap=="none")||(floor=="none")){console.log("nope");}
+		//document.getElementById("findme").disabled = true;
+		
+		console.log("gender: " + document.querySelector('input[name="gender"]:checked').value + " var: " + gender);
+		console.log("handicap: " + document.querySelector('input[name="handicap"]:checked').value + " var: " + handicap);
+		console.log("floor: " + document.getElementById("floor").value + " var: " + floor);
+	//}
+	//else{
+		//document.getElementById("findme").disabled = false;
+	//	console.log("ready");
+	//}
 }
 
 function tellMe(){
 	console.log("gender: " + document.querySelector('input[name="gender"]:checked').value);
 	console.log("handicap: " + document.querySelector('input[name="handicap"]:checked').value);
 	console.log(document.getElementById("floor").value);
-	var gender = document.querySelector('input[name="gender"]:checked');
-	var handicap = document.querySelector('input[name="gender"]:checked');
-	var floor = document.getElementById("floor").value;
 }
 				
 function findMe(){

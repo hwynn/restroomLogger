@@ -12,14 +12,14 @@
 			<!--http://cssfontstack.com/oldsites/cssfontstack/-->
 				<p id="header">Log this Bathroom</p>
 			</div>
-			<div id="genderform" class="formfield center">
-				<input type="radio" class="blank" id="nogender" name="gender" value="none" checked>
+			<div id="genderform" class="formfield center" onchange="check()">
+				<input type="radio" class="blank" id="nogender" name="gender" value="none">
 				<label><input type="radio" name="gender" value="male"> Male <img class="icon" src="mens.png"></label> <br>
 				<label><input type="radio" name="gender" value="female"> Female <img class="icon" src="womens.png"></label> <br>
 				<label><input type="radio" name="gender" value="unisex"> Unisex <img class="icon" src="unisex.png"></label> <br>
 			</div>
-			<div id="handicapform" id="handicap" class="formfield center">
-				<input type="radio" class="blank" id="nohandicap" name="handicap" value="none" checked>
+			<div id="handicapform" id="handicap" class="formfield center" onchange="check()">
+				<input type="radio" class="blank" id="nohandicap" name="handicap" value="none">
 				<label><input type="radio" name="handicap" value="yes"> Handicap Accessible <img class="icon" src="wheelchair.png"></label> <br>
 				<label><input type="radio" name="handicap" value="no"> Not Handicap Accessible</label> <br>
 			</div>
