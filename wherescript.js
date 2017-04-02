@@ -16,20 +16,6 @@ function check(){
 		document.getElementById("findme").disabled = false;
 	}
 }
-
-function tellMe(){
-	var gender = document.querySelector('input[name="gender"]:checked').value;
-	
-	var handicap;
-	if (document.querySelector('input[name="handicap"]:checked').value == "yes")
-	{handicap = "true";}
-	else
-	{handicap = "false";}
-
-	var floor = document.getElementById("floor").value;
-	
-	console.log(gender + " " + handicap + " " + floor);
-}
 				
 function findMe(){
 	var x = document.getElementById("whereinfo");
@@ -80,8 +66,7 @@ function findMe(){
 			"<br>handicap access: " + vD_H +
 			"<br>floor: " + vD_F;
 			
-			
-			/*var params = vN_LA + vD_LA + "&" + vN_LO + vD_LO + "&" + vN_A + vD_A + "&" + vN_T + vD_T;
+			/*var params = vN_LA + vD_LA + "&" + vN_LO + vD_LO + "&" + vN_A + vD_A + "&" + vN_T + vD_T + "&" + vN_AL + vD_AL + "&" + vN_AA + vD_AA + "&" + vN_G + vD_G + "&" + vN_H + vD_H + "&" + vN_F + vD_F;
 			xmlhttp.open("POST", url, true);
 
 			//This is what the php documentation page said to use for request headers. I have no clue what they do.
