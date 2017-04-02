@@ -23,7 +23,7 @@ function findMe(){
 		navigator.geolocation.getCurrentPosition(function(my_position){
 			//we're using an XMLHttpRequest!
 			//http://www.openjs.com/articles/ajax_xmlhttp_using_post.php
-			//xmlhttp=new XMLHttpRequest();
+			xmlhttp=new XMLHttpRequest();
 			//variable name vN
 			//variable data vD
 			//these will be packaged and sent into the xmlhttp request
@@ -54,7 +54,7 @@ function findMe(){
 			
 			
 			
-			var url = "places.php";
+			var url = "restroomLoggerServer.php";
 			x.innerHTML = "You're here!<br>" + 
 			"latitude: " + my_position.coords.latitude + 
 			"<br>longitude: " + my_position.coords.longitude +
@@ -66,7 +66,7 @@ function findMe(){
 			"<br>handicap access: " + vD_H +
 			"<br>floor: " + vD_F;
 			
-			/*var params = vN_LA + vD_LA + "&" + vN_LO + vD_LO + "&" + vN_A + vD_A + "&" + vN_T + vD_T + "&" + vN_AL + vD_AL + "&" + vN_AA + vD_AA + "&" + vN_G + vD_G + "&" + vN_H + vD_H + "&" + vN_F + vD_F;
+			var params = vN_LA + vD_LA + "&" + vN_LO + vD_LO + "&" + vN_A + vD_A + "&" + vN_T + vD_T + "&" + vN_AL + vD_AL + "&" + vN_AA + vD_AA + "&" + vN_G + vD_G + "&" + vN_H + vD_H + "&" + vN_F + vD_F;
 			xmlhttp.open("POST", url, true);
 
 			//This is what the php documentation page said to use for request headers. I have no clue what they do.
@@ -79,7 +79,7 @@ function findMe(){
 					alert(xmlhttp.responseText);
 				}
 			}
-			xmlhttp.send(params);*/
+			xmlhttp.send(params);
 		});
 	}
 	else {
