@@ -41,18 +41,16 @@ function findMe(){
 			var vN_AA = "altaccy=";
 			var vD_AA = my_position.coords.altitudeAccuracy.toString();
 			
-			var vN_G = "gdr";
+			var vN_G = "gdr=";
 			var vD_G = document.querySelector('input[name="gender"]:checked').value.toString();
-			var vN_H = "han";
+			var vN_H = "han=";
 			var vD_H;
 			if (document.querySelector('input[name="handicap"]:checked').value == "yes")
 			{vD_H = "1";}
 			else
 			{vD_H = "0";}
-			var vN_F = "flr";
+			var vN_F = "flr=";
 			var vD_F = document.getElementById("floor").value.toString();
-			
-			
 			
 			var url = "restroomLoggerServer.php";
 			x.innerHTML = "You're here!<br>" + 
