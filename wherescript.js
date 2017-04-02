@@ -60,9 +60,9 @@ function findMe(){
 			var vN_H = "han";
 			var vD_H;
 			if (document.querySelector('input[name="handicap"]:checked').value == "yes")
-			{vD_H = "true";}
+			{vD_H = "1";}
 			else
-			{vD_H = "false";}
+			{vD_H = "0";}
 			var vN_F = "flr";
 			var vD_F = document.getElementById("floor").value.toString();
 			
