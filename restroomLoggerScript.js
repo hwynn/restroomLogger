@@ -37,10 +37,22 @@ function findMe(){
 			var	vD_T = my_position.timestamp.toString();
 			
 			var vN_AL = "alt=";
-			var vD_AL = my_position.coords.altitude.toString();
+			var vD_AL;
+			if(  my_position.coords.altitude == null){
+				vD_AL = "-1";
+			}
+			else{
+				vD_AL = my_position.coords.altitude.toString();
+			}
 			var vN_AA = "altaccy=";
-			var vD_AA = my_position.coords.altitudeAccuracy.toString();
-			
+			var vD_AA;
+			if(my_position.coords.altitudeAccuracy==null)
+			{
+				vD_AA = "-1";
+			}
+			else{
+				vD_AA = my_position.coords.altitudeAccuracy.toString();
+			}
 			var vN_G = "gdr=";
 			var vD_G = document.querySelector('input[name="gender"]:checked').value.toString();
 			var vN_H = "han=";

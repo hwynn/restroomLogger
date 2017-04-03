@@ -30,27 +30,39 @@ display:none;
 }
 
 .icon{
-	width: 31px; 
-	height: 31px;
+	width: 62px; 
+	height: 62px;
 }
 
 #genderform{
-	width: 30%;
-	font-size: 1.2em;
+	width: 80%;
+	font-size: 3em;
 	border-style: dotted;
 }
 #handicapform{
-	width: 30%;
-	font-size: 1.2em;
+	width: 80%;
+	font-size: 3em;
 	border-style: dotted;
 }
 
+#floor{
+-webkit-appearance: menulist-button;
+height: 100px;
+width: 100px;
+font-size: 3em;
+}
+
 #header{
-font-size: 2em;
+font-size: 4em;
 margin-top: 2px;
 margin-bottom: 2px;
 color: rgb(45,67,58);
 font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+}
+
+#findme{
+padding: 28px 28px;
+font-size: 1.5em;
 }
 
 #whereinfo{
