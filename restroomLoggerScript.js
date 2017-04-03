@@ -81,8 +81,6 @@ function findMe(){
 
 			//This is what the php documentation page said to use for request headers. I have no clue what they do.
 			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			xmlhttp.setRequestHeader("Content-length", params.length);
-			xmlhttp.setRequestHeader("Connection", "close");
 
 			xmlhttp.onreadystatechange = function() {//I think does AJAX stuff when everything is ready.
 				if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
